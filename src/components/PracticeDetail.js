@@ -23,7 +23,7 @@ _dark={{ bg: "#364A5C" }}
             marginLeft="16"
             w="234"
             _dark={{ bg: "#28B436", borderColor:"#C8F9CD"}}
-            _light={{ bg: "#E4F7FF", borderColor:"#364A5C" }}
+             _light={{ bg: "#C8F9CD", borderColor:"#35853D" }}
           > 
           <Text color="#000000"fontSize="20" marginLeft="-100" _dark={{ color: "#000000" }}
    _light={{ color: "#364A5C" }} >A.volley ball</Text>
