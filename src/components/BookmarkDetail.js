@@ -5,26 +5,21 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const BookmarkDetail = ({ album, navigation }) => {
   return (
-    <Box marginX={1} marginBottom={2} borderRadius={3} _dark={{ bg: "#364A5C" }}
+    <Box marginX={1} marginBottom={2}borderRadius={3} _dark={{ bg: "#364A5C" }}
     _light={{ bg: "#E4F7FF" }} >
-      <Box p={1} bg="#E4F7FF" w="800" height="1000" _dark={{ bg: "#364A5C" }}
+      <Box p={1} bg="#E4F7FF"  height="120" _dark={{ bg: "#364A5C" }}
    _light={{ bg: "#E4F7FF" }} >
-        <Text fontSize="14" fontWeight="bold" marginLeft="10" marginTop="2" _dark={{ color: "#fff" }}
-   _light={{ color: "#364A5C" }}>All</Text>
-   <Text marginLeft="9"  marginTop="-3" _dark={{ color: "#fff" }} _light={{ color: "#364A5C" }} >____</Text>
-   <Text fontSize="14" fontWeight="bold" marginLeft="10" marginTop="2" _dark={{ color: "#98AFC5" }}
-   _light={{ color: "#98AFC5" }} marginLeft="20" marginTop="-8">Recent    Ball games    Ice sports</Text>
-      <Button 
+ 
+      <Box 
           bg="#E4F7FF"           
             h="100"
             borderWidth='2'          
-            marginTop="4"
             marginLeft="7"
             w="310"
             _dark={{ borderColor: "#fff" ,bg:"#364A5C"}}
             _light={{ borderColor: "#364A5C" ,bg:"#E4F7FF"}}
           >
-        <Box w="100" marginTop="-10" _dark={{ color: "#fff" }}
+        <Box w="100" marginTop="2" marginLeft="2" _dark={{ color: "#fff" }}
    _light={{ color: "#364A5C" }}>
                 <Image
                 marginRight={5}
@@ -48,7 +43,7 @@ const BookmarkDetail = ({ album, navigation }) => {
                 <MaterialCommunityIcons name="bookmark" _dark={{ bg: "#fff" }}
    _light={{ bg: "#364A5C" }} size={26} /> 
               </Box>
-          </Button>
+          </Box>
     
       </Box>   
     </Box>

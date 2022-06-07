@@ -37,7 +37,7 @@ const DetailScreen = ({ route,navigation }) => {
    _light={{ bg: "#E4F7FF" }}>
           <Box>
           <Heading   marginLeft="10" fontSize="20" fontWeight="bold" _dark={{ color: "#fff" }}
-   _light={{ color: "#364A5C" }}>Indroduction</Heading>
+   _light={{ color: "#364A5C" }}>Introduction</Heading>
           <Heading marginLeft="300" marginTop="-7" _dark={{ color: "#fff" }}
    _light={{ color: "#364A5C" }}><MaterialCommunityIcons name="share" color="#000000" size={26} marginLeft={30} _dark={{ color: "#fff" }}
    _light={{ color: "#364A5C" }}/></Heading>

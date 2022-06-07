@@ -9,12 +9,13 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 
 
-import BallScreen from '../screens/BallScreen';
+import MainScreen from '../screens/MainScreen';
 import DetailScreen from '../screens/DetailScreen';
 import SettingsScreen from '../screens/SettingScreen';
-import DisplaySettingScreen from '../screens/DisplaySettingScreen'
+import AccountScreen from '../screens/AccountScreen';
 import PracticeScreen from '../screens/PracticeScreen';
 import BookmarkScreen from '../screens/BookmarkScreen';
+import MapScreen from '../screens/MapScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -165,6 +166,7 @@ const MyTabs = () => {
           ),
         }}
       />
+     
       <Tab.Screen 
         name="Setting" 
         component={PracticeStack}
@@ -180,6 +182,22 @@ const MyTabs = () => {
           ),
         }}
       />
+       <Tab.Screen 
+        name="Map" 
+        component={MapStack}
+        options={{
+          headerShown:false,
+          title: "Map",
+          headerTitleStyle: {
+            fontWeight: '400',
+            fontSize: 20
+          },
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="map" color={color} size={26} />
+          ),
+        }}
+      />
+       
       
     </Tab.Navigator>
   );
@@ -204,7 +222,7 @@ const HomeStack = ({navigation}) => {
     >
       <Stack.Screen
         name="s"
-        component={BallScreen}
+        component={MainScreen}
         options= {{
           title:'',
           headerShown:true,
@@ -275,7 +293,7 @@ const AccountStack = ({navigation}) => {
     >
       <Stack.Screen
         name="s"
-        component={DisplaySettingScreen}
+        component={AccountScreen}
         options= {{
           title:'',
           headerShown:true,
@@ -372,6 +390,52 @@ const AccountStack = ({navigation}) => {
     </Stack.Navigator>
   );
 }
+const MapStack = ({navigation}) => {
+  const {colorMode}=useColorMode();
+  return  (
+    <Stack.Navigator
+       screenOptions={{
+         headerShown: false,
+         headerShadowVisible:false,
+         headerStyle:{
+          backgroundColor:colorMode=="dark"?"#303030":"#fff",
+        },
+        headerInactiveTintColor: colorMode=="dark"?"#fff":"#303030", 
+       }}
+    >
+      <Stack.Screen
+        name="s"
+        component={MapScreen}
+        options= {{
+          title:'',
+          headerShown:true,
+          headerLeft: () => (
+            <Pressable>
+            <MaterialCommunityIcons
+            name={'menu'}
+            size={20}
+            component={MyDrawer}
+            onPress={()=> navigation.openDrawer()}
+            style={{marginRight: 20}} 
+            color={colorMode=="dark"?"#fff":"#303030"}              
+            />
+           </Pressable>
+          ),
+            headerRight: ({ color }) => (
+              <MaterialCommunityIcons
+              name={'magnify'}
+              size={25}
+              component={MyDrawer}
+              style={{marginRight: 3}}
+              color={colorMode=="dark"?"#fff":"#303030"}     
+              />
+         ),
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+
 
 const PracticeStack = ({navigation}) => {
   const [mark, setmark] = useState(true);
@@ -471,10 +535,10 @@ const SettingsStack = ({navigation}) => {
         />
   
      <Stack.Screen
-        name="DisplaySetting"
-        component={DisplaySettingScreen}
+        name="Account"
+        component={AccountScreen}
         options={{
-              title: "Display",
+              title: "Account",
               headerTitleStyle: {
               fontWeight: '400',
               fontSize: 20

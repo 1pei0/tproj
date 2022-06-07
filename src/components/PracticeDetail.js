@@ -1,7 +1,6 @@
 import React from "react";
-import { Linking } from 'react-native';
-import { Box, StyleSheet, Text, Image, Pressable, Heading , Button, Center} from "native-base"
-import BallScreen from "../screens/BallScreen";
+import { Box,  Text,  Pressable,  Button, Center} from "native-base"
+
 
 const PracticeDetail = ({ album, navigation }) => {
   return (
@@ -23,7 +22,7 @@ _dark={{ bg: "#364A5C" }}
             marginLeft="16"
             w="234"
             _dark={{ bg: "#28B436", borderColor:"#C8F9CD"}}
-             _light={{ bg: "#C8F9CD", borderColor:"#35853D" }}
+            _light={{ bg: "#C8F9CD", borderColor:"#35853D" }}
           > 
           <Text color="#000000"fontSize="20" marginLeft="-100" _dark={{ color: "#000000" }}
    _light={{ color: "#364A5C" }} >A.volley ball</Text>
@@ -77,7 +76,6 @@ _dark={{ bg: "#364A5C" }}
             marginTop="1"           
             w="100"
             alignSelf="center" 
-            component={BallScreen}
           > 
           <Text color="#fff"fontSize="14" marginTop="-1" marginLeft="1">Continue</Text>
           </Button> 

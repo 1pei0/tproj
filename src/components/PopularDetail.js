@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, HStack, VStack, AspectRatio, Text, Image, Pressable, Heading } from "native-base"
 
+//import MuiImageSlider from 'mui-image-slider';
 
 const PopularDetail = ({ album, navigation }) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box,ScrollView,Text,View} from "native-base";
-import IceList from "../components/Icetlist";
+import IceList from "../components/IceList";
 import albumData from "../json/albums.json";
 
 
@@ -10,8 +10,7 @@ const IceScreen = ({ navigation }) => {
       <View>
     <Box bg="#fff" horizontal={false} h="320" >
       
-      <IceList
-      
+      <IceList     
       horizontal={true}
         list={albumData.albumList2}  
         navigation={navigation}
