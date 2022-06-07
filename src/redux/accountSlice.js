@@ -2,13 +2,13 @@ import { createSlice } from '@reduxjs/toolkit';
 
 
 // Part1: Define Slice (including reducers and actions)
-const initialState = { counterValue: 0 };
+const initialState = { saveValue: 0 };
 
 const saveSlice = createSlice({
   name: 'save',
   initialState,
   reducers: {
-    setCounter: (state, action) => {
+    setSave: (state, action) => {
       state.saveValue = action.payload;
     },
   },
