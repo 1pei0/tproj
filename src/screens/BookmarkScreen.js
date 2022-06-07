@@ -10,11 +10,14 @@ import BookmarkList from "../components/BookmarkList";
 import albumData from "../json/ex.json";
 import { NativeBaseProvider,  Button } from "native-base";
 import { useDispatch, useSelector } from "react-redux";
-//import { selectSave, setSave } from "../redux/accountSlice";
-//import { selecysave } from "../redux/accountSlice";
+import { selectSave, setSave } from "../redux/accountSlice";
+import { selecysave } from "../redux/accountSlice";
+//import { increaseOne } from "../redux/counterSlice";
+//import { decreaseOne } from "../redux/counterSlice";
+//import { selectCounter } from "../redux/counterSlice";
 
 const BookmarkScreen = ({route}) => {
-  //const saveValue = useSelector(selectSave);
+  const saveValue = useSelector(selectSave);
  
   // Define a dispatch to send actions
   //const dispatch = useDispatch();
@@ -61,10 +64,9 @@ const BookmarkScreen = ({route}) => {
                   />    
                    </ScrollView>
             </SafeAreaView>
-  
+            
         </KeyboardAvoidingView>       
     );
 }
 
 export default BookmarkScreen;
-//, 'Ball games','Ice sport'
