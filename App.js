@@ -3,7 +3,7 @@ import { NativeBaseProvider } from 'native-base';
 import Navigation from './src/navigation';
 import React, { useEffect, getState } from "react";
 import {Provider } from "react-redux";
-import  store  from './src/redux/store';
+import { store } from './src/redux/store';
 
 const App=() =>{
   return (
