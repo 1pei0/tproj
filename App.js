@@ -7,12 +7,12 @@ import { store } from './src/redux/store';
 
 const App=() =>{
   return (
-    <SafeAreaProvider>
-     <Provider  store={store}>
-      <NativeBaseProvider>
-      <Navigation />  
-      </NativeBaseProvider>
-      </Provider>
+    <SafeAreaProvider> 
+      <NativeBaseProvider> 
+        <Provider store={store}>    
+      <Navigation />      
+      </Provider> 
+      </NativeBaseProvider>  
   </SafeAreaProvider>
   );
 }
