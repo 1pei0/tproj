@@ -1,54 +1,122 @@
-import React from 'react';
-import { Box, Center, Switch, HStack, Text, useColorMode,Image } from 'native-base';
-import { color } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
-import {StyleSheet, Linking } from 'react-native';
+import { Dimensions } from 'react-native';
+import { Center, Box, Text, Pressable, useColorMode } from 'native-base';
+import Animated, {
+   interpolateColor,
+   useAnimatedStyle,
+   useDerivedValue,
+   withTiming,
+} from 'react-native-reanimated';
+import Ionicon from 'react-native-vector-icons/Ionicons';
 
-const SettingScreen = () => {
-   const{colorMode,toggleColorMode}=useColorMode();
-  return (
-   <Center
-   shadow={2} width="90%"
-   mt="5" px="2" py="3" marginBottom={14}
-   _dark={{ bg: "#364A5C" }}
-   _light={{ bg: "#E4F7FF" }}
-   borderRadius="25"
-   alignSelf="center"
->
-   <HStack space={180} alignItems="center" color="#fff" >
-      <Text  ml="10" fontSize="2xl" color={colorMode == "light" ? "#364A5C" : "#fff"}>{colorMode == "light" ? "夜間模式" : "夜間模式"}</Text>
-      <Switch
-         name="dark Mode"
-         isChecked={colorMode === "dark"}
-         // colorScheme="amber"
-         onToggle={toggleColorMode}
-         accessibilityLabel="display-mode"
-         accessibilityHint="light or dark mode"
-         size="lg"
-         ml="-20"
-      />
-   </HStack>
-</Center>
-  );
-};
-export default SettingScreen;
+const AnimatedBox = Animated.createAnimatedComponent(Box);
+const AnimatedCenter = Animated.createAnimatedComponent(Center);
+const AnimatedText = Animated.createAnimatedComponent(Text);
+const AnimatedIonicon = Animated.createAnimatedComponent(Ionicon);
 
-const styles = StyleSheet.create({ 
-   textStyle: {
-      marginTop:22,
-      marginBottom:10,
-      fontSize:27,
-      marginLeft:30,
-      lineHeight:40,
-      fontWeight:"700",
+const WIDTH = Dimensions.get('window').width * 0.7;
+
+const Colors = {
+   dark: {
+      background: '#1E1E1E',
+      circle: '#252525',
+      icon: '#000',
+      text: '#F8F8F8',
    },
-   imageStyle: {
-      height: 150,
-      width:400,
-      justifyContent:"center",
-      borderRadius:15,
-      marginLeft:17,
-    },
- });
- 
+   light: {
+      background: '#F8F8F8',
+      circle: '#FFF',
+      icon: '#F4F4F5',
+      text: '#1E1E1E',
+   },
+};
 
+export default function App() {
+   const { colorMode, toggleColorMode } = useColorMode();
+
+   const progress = useDerivedValue(() => {
+      return withTiming(colorMode === 'dark' ? 1 : 0, { duration: 2000 });
+   });
+
+   const animatedStyle = useAnimatedStyle(() => {
+      const backgroundColor = interpolateColor(
+         progress.value,
+         [0, 1],
+         [Colors.light.background, Colors.dark.background]
+      );
+
+      return {
+         backgroundColor,
+      };
+   });
+
+   const animatedCircleStyle = useAnimatedStyle(() => {
+      const backgroundColor = interpolateColor(
+         progress.value,
+         [0, 1],
+         [Colors.light.circle, Colors.dark.circle]
+      );
+
+      return {
+         backgroundColor,
+      };
+   });
+
+   const animatedIconStyle = useAnimatedStyle(() => {
+      const backgroundColor = interpolateColor(
+         progress.value,
+         [0, 1],
+         [Colors.light.icon, Colors.dark.icon]
+      );
+
+      return {
+         backgroundColor,
+      };
+   });
+
+   const animatedTextStyle = useAnimatedStyle(() => {
+      const color = interpolateColor(
+         progress.value,
+         [0, 1],
+         [Colors.light.text, Colors.dark.text]
+      );
+
+      return {
+         color,
+      };
+   });
+
+
+   return (
+      <AnimatedCenter flex={1} style={animatedStyle}>
+         <AnimatedText
+            fontSize={20}
+            fontWeight={'700'}
+            letterSpacing={14}
+            marginBottom={35}
+            style={animatedTextStyle}
+         >
+            COLORMODE
+         </AnimatedText>
+         <AnimatedCenter
+            w={WIDTH}
+            h={50}
+            borderRadius={WIDTH / 3}
+            shadow="4"
+            style={animatedCircleStyle}
+         >
+            <Pressable onPress={toggleColorMode}>
+               <AnimatedBox borderRadius={40} style={animatedIconStyle}>
+                  <AnimatedIonicon
+                     name={colorMode == 'dark' ? "moon-outline" : "sunny-outline"}
+                     size={40}
+                     style={animatedTextStyle}
+                  />
+               </AnimatedBox>
+            </Pressable>
+         </AnimatedCenter>
+      </AnimatedCenter>
+   );
+}
+
+   
 
