@@ -47,7 +47,7 @@ const BookmarkDetail = ({ album, navigation }) => {
               <Box marginLeft="255" marginTop="-60">
               <TouchableOpacity onPress={() => markFunction()}>
             <Text>{mark ? <MaterialCommunityIcons name={'bookmark-outline'} color={'black'} size={25} />:
-                            <MaterialCommunityIcons name={'bookmark'} color={'#364A5C'} size={25} />}
+                            <MaterialCommunityIcons name={'bookmark'} color={'#ffffff'} size={25} />}
             </Text>
         </TouchableOpacity>
               </Box>
