@@ -9,15 +9,17 @@ import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
 import BookmarkList from "../components/BookmarkList";
 import albumData from "../json/ex.json";
 import { NativeBaseProvider,  Button } from "native-base";
-import { useDispatch, useSelector } from "react-redux";
-import { selectSave, setSave } from "../redux/accountSlice";
-import { selecysave } from "../redux/accountSlice";
-//import { increaseOne } from "../redux/counterSlice";
-//import { decreaseOne } from "../redux/counterSlice";
-//import { selectCounter } from "../redux/counterSlice";
+//import { useDispatch, useSelector } from "react-redux";
+//import { selectSave, setSave } from "../redux/accountSlice";
+
+//import "./styles.css";
+
+//import AddBookmark from "../containers/AddBookmark ";
+//import BookmarkList0 from "../containers/BookmarkList0";
+
 
 const BookmarkScreen = ({route}) => {
-  const saveValue = useSelector(selectSave);
+  //const saveValue = useSelector(selectSave);
  
   // Define a dispatch to send actions
   //const dispatch = useDispatch();
@@ -42,8 +44,9 @@ const BookmarkScreen = ({route}) => {
                     _dark={{borderColor: "#E4F7FF"}}
                     _light={{borderColor: "#364A5C"}}
                 >
+                   
                     <SegmentedControlTab 
-                        values={['All','Recent']}
+                        values={['Ball games','Ice sport']}
                         selectedIndex={customStyleIndex}
                         onTabPress={handleCustomIndexSelect}
                         tabStyle={{backgroundColor: "transparent", borderWidth: 0, borderColor: "transparent"}}
@@ -56,12 +59,14 @@ const BookmarkScreen = ({route}) => {
                     />
                 </Box>
                 <ScrollView marginTop={5}> 
-              
-                    <BookmarkList
-                   horizontal={true}
-                    list={albumData.albumList2}  
-                    
-                  />    
+                <Center mb={tabBarHeight}>
+                        {
+                            customStyleIndex === 0 ?
+                                <BookmarkList list={true}/>:
+                                <BookmarkList list={false}/>
+                        }
+                        
+                    </Center>
                    </ScrollView>
             </SafeAreaView>
             
@@ -70,3 +75,4 @@ const BookmarkScreen = ({route}) => {
 }
 
 export default BookmarkScreen;
+//, 'Ball games','Ice sport'

@@ -1,14 +1,22 @@
-
 import { configureStore } from '@reduxjs/toolkit';
-import saveReducer from '../redux/accountSlice';
+import { persistStore, persistReducer } from 'redux-persist';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import thunk from "redux-thunk";
 
-// Part2: Combine Reducers and Create a Store
-const store = configureStore({
-   reducer: {
-     counter: saveReducer
-   },
-   devTools: process.env.NODE_ENV !== 'production',
- });
+import accountReducer from "./accountSlice";
 
-//  export store to global
-export default store;
+const persistConfig = {
+  key: 'root',
+  storage: AsyncStorage,
+};
+
+export const store = configureStore({
+  reducer: {
+    account: persistReducer(persistConfig, accountReducer),
+  },
+  devTools: process.env.NODE_ENV !== 'production',
+  middleware: [thunk]
+
+});
+
+export const persistor = persistStore(store);

@@ -1,24 +1,30 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-
 // Part1: Define Slice (including reducers and actions)
-const initialState = { saveValue: 0 };
+const initialState = {
+   general: {
+      name: "",
+      email: "",
+      adrs: "",
+      tel: ""
+   }
+};
 
-const saveSlice = createSlice({
-  name: 'save',
-  initialState,
-  reducers: {
-    setSave: (state, action) => {
-      state.saveValue = action.payload;
-    },
-  },
+const accountSlice = createSlice({
+   name: 'account',
+   initialState,
+   reducers: {
+      setGeneralAccountInfo: (state, action) => {
+         state.general = action.payload;
+      }
+   },
 });
 
 // export state to global
-export const selectSave = (state) => state.save.saveValue;
+export const selectGeneral = (state) => state.account.general;
 
 // export actions to global
-export const { setSave } = saveSlice.actions;
+export const { setGeneralAccountInfo } = accountSlice.actions;
 
 // export reducer to global
-export default saveSlice.reducer;
+export default accountSlice.reducer;

@@ -64,22 +64,7 @@ export default function MapScreen() {
       setOnCurrentLocation(true);
    }
 
-   //const getParkData = async () => {
-     // const parkData = await getParkInfo();
-     // setpark(parkData);
-   //};
-
- /* useEffect(() => {
-      if (Platform.OS === "android" && !Device.isDevice) {
-         setMsg(
-            "Oops, this will not work on Sketch in an Android emulator. Try it on your device!"
-         );
-         return
-      }
-      getLocation();
-      getParkData();
-   }, []);
-*/
+   
    return (
       <Box flex={1}>
          <MapView

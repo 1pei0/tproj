@@ -1,0 +1,183 @@
+{
+    "abumList8":
+    [
+       {
+          "title": "巧固球",
+          "artist": "3,7 players",
+          "nation":"From Switzerland",
+          "image": "https://github.com/1pei0/pic/blob/main/Component%2027.png?raw=true",
+         "price": "一種沒有身體碰撞的運動，基本玩法是球員於3公尺半圓的禁區外射球，球反彈出禁區及落於場區內並且中途沒被對手球員接到球便可得分，比賽中途不能去搶對手的球，亦不能阻礙對方傳球、射球。",
+         "description":"Tchoukball /ˈtʃuːkbɔːl/ is an indoor team sport developed in the 1970s by Swiss biologist Hermann Brandt. Brandt was concerned about the number of injuries in sport at the time and as part of an educational study he wanted to create a sport that reduced injuries, was not aggressive between players and enabled people of all shapes, sizes, genders, cultures, and backgrounds to play together."
+       },
+       {
+          "title": "藤球",
+          "artist": "3 players",
+          "nation":"From Switzerland",
+          "horizontal":true,
+          "image": "https://github.com/1pei0/pic/blob/main/Component%2024-6.png?raw=true",
+          "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion.",
+          "price": 10.66
+       },
+       {
+          "title": "匹克球",
+          "artist": "8 players",
+          "nation":"From Switzerland",
+          "horizontal":true,
+          "image": "https://github.com/1pei0/pic/blob/main/Component%2026-3.png?raw=true",
+          "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+          "price": 11.45,
+          "description": "2010 release, the third album from the Country/Pop superstar. Speak Now is the follow-up to her multi-million-selling 2008 album, Fearless. The 21-year-old singer/songwriter wrote the entire album on her own and co-produced with longtime collaborator Nathan Chapman, who worked with her on Fearless and her 2006 self-titled debut. Features the single 'Mine'."
+       } 
+    ],
+    "albumList0":
+    [
+       {
+          "title": "Pei is only a little cute and she is... ",
+          "artist": "Li-Zhi-Ting is xxxxx and ......",
+          "nation":"From Switzerland",
+          "word1":"Ting is very bad and unhandsome.....",
+          "url":"https://zh.wikipedia.org/wiki/球類運動"
+       }
+       
+    ],
+   
+    "albumList1":
+     [
+       {
+          "title": "巧固球",
+          "title2":"巧固球Tchoukball",
+          "artist": "3,7 players",
+          "nation":"From Switzerland",
+          "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
+         "image": "https://github.com/1pei0/pic/blob/main/Group%204.png?raw=true",
+         "image2":"https://github.com/1pei0/pic/blob/main/image%206.png?raw=true",
+          "price": "一種沒有身體碰撞的運動，基本玩法是球員於3公尺半圓的禁區外射球，球反彈出禁區及落於場區內並且中途沒被對手球員接到球便可得分，比賽中途不能去搶對手的球，亦不能阻礙對方傳球、射球。",
+          "description":"Tchoukball /ˈtʃuːkbɔːl/ is an indoor team sport developed in the 1970s by Swiss biologist Hermann Brandt. Brandt was concerned about the number of injuries in sport at the time and as part of an educational study he wanted to create a sport that reduced injuries, was not aggressive between players and enabled people of all shapes, sizes, genders, cultures, and backgrounds to play together."
+       },
+       {
+          "title": "藤球",
+          "title2":"藤球Sepak takraw",
+          "artist": "3 players",
+          "nation":"From Switzerland",
+          "image2":"https://github.com/1pei0/pic/blob/main/image%206-6.png?raw=true",
+          "horizontal":true,
+          "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
+          "image": "https://github.com/1pei0/pic/blob/main/%E8%97%A4%E7%90%83sepak%20takraw.png?raw=true",
+          "description": "Sepak Takraw, or Sepaktakraw, also called kick volleyball, is a team sport played with a rattan (synthetic plastic ball) between two teams of two to four players on a court resembling a badminton court.[3][4] It shares similarities to volleyball and footvolley with its use of a rattan ball and allowing players to use only their feet, knees, shoulders, chest and head to touch the ball. Sepak Takraw is often referred to as a mixture of volleyball, due to its use of a net, and association football, as players use their fee",
+          "price": "藤球，是一種起源於西元15世紀的馬來西亞的馬六甲一帶的運動。藤球是亞洲運動會和東南亞運動會的正式比賽項目之一。比賽藤球時所使用的球是由藤所編成的黃色空心圓球，故以此為名。它的比賽方式與排球有些類似，所以又被稱為「腳踢的排球」。與藤球相似的運動有足毽、足排球、韓國式足球和沙包球等。"
+          
+       },
+       {
+          "title": "匹克球",
+          "title2":"匹克球Pickleball",
+          "artist": "8 players",
+          "nation":"From Switzerland",
+          "horizontal":true,
+          "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
+          "image": "https://github.com/1pei0/pic/blob/main/Component%2010.png?raw=true",
+          "image2":"https://github.com/1pei0/pic/blob/main/image%206-2.png?raw=true",
+          "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+          "price": "",
+          "description": "2010 release, the third album from the Country/Pop superstar. Speak Now is the follow-up to her multi-million-selling 2008 album, Fearless. The 21-year-old singer/songwriter wrote the entire album on her own and co-produced with longtime collaborator Nathan Chapman, who worked with her on Fearless and her 2006 self-titled debut. Features the single 'Mine'."
+       } ,
+       {
+          "title": "健球",
+          "title2":"健球Kin-ball",
+          "artist": "3 players",
+          "nation":"From Switzerland",
+          "image2":"https://github.com/1pei0/pic/blob/main/image%206-3.png?raw=true",
+          "horizontal":true,
+          "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
+          "image": "https://github.com/1pei0/pic/blob/main/%E5%81%A5%E7%90%83.png?raw=true",
+          "description": "Kin-Ball, is a team sport created in Quebec, Canada in 1986 by Mario Demers, a physical education professor, in which the main distinctive characteristics are the large size of the ball (1.2m (48 inches) in diameter)[i][1] and that the matches are played by three teams at the same time. The International Kin-Ball Federation counts 3.8 million participants, primarily from Canada, the U.S., Japan, Belgium, France, Switzerland, Spain, Germany, Denmark, the Czech Republic, Malaysia and China. The newest country is the UK; Kin-Ball UK formed in 2018.",
+          "price": "健球（英語：Kin-Ball），是1986年由加拿大魁北克體育教授馬里奧·德梅斯（Mario Demers）創立的團體運動，其中主要的特色是使用直徑1.22米尺寸的大球，並且比賽中三支球隊在球場上同時代替傳統的一對一，就像大多數球隊比賽一樣。目前國際健球聯合會總共有380萬參與者，主要來自加拿大、美國、日本、比利時、法國、瑞士、西班牙、德國、丹麥、捷克共和國、馬來西亞、香港及中國。而最新的國家隊是英國隊，成立於2018年。"
+          
+       },
+       {
+          "title": "手球",
+          "title2":"手球Handball",
+          "artist": "3 players",
+          "nation":"From Switzerland",
+          "image2":"https://github.com/1pei0/pic/blob/main/image%2010.png?raw=true",
+          "horizontal":true,
+          "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
+          "image": "https://github.com/1pei0/pic/blob/main/Component%2020.png?raw=true",
+          "description": "Kin-Ball, is a team sport created in Quebec, Canada in 1986 by Mario Demers, a physical education professor, in which the main distinctive characteristics are the large size of the ball (1.2m (48 inches) in diameter)[i][1] and that the matches are played by three teams at the same time. The International Kin-Ball Federation counts 3.8 million participants, primarily from Canada, the U.S., Japan, Belgium, France, Switzerland, Spain, Germany, Denmark, the Czech Republic, Malaysia and China. The newest country is the UK; Kin-Ball UK formed in 2018.",
+          "price": "標準的手球比賽由兩隊各派七名參與，包括6名普通球員及1名守門員，在長40公尺，寬20公尺的球場上互相對抗、互相進攻。比賽目的是盡量將手球射入對方的球門內，每射入一球就可以得到1分，當比賽完畢後，得分最多的一隊則代表勝出。"
+          
+       }
+    ],
+    "albumList2":
+    [
+      {
+         "start_image":"https://github.com/1pei0/pic/blob/main/Star%201.png?raw=true",
+         "title": "雪橇",
+         "title2": "俯式冰撬Skeleton",
+         "image2":"https://github.com/1pei0/pic/blob/main/image%206-7.png?raw=true",
+         "artist": "3,7 players",
+         "nation":"From Switzerland",
+         "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
+        "image": "https://github.com/1pei0/pic/blob/main/Component%2011.png?raw=true",
+        "description": "Skeleton is a winter sliding sport in which a person rides a small sled, known as a skeleton bobsled (or -sleigh), down a frozen track while lying face down and head-first. The sport and the sled may have been named from the bony appearance of the sled.[1]",
+        "price":"俯式冰橇（英語：Skeleton），又稱鋼架雪車，是其中一項以雪橇為比賽工具的冬季運動項目。顧名思義，運動員需俯臥在雪橇上滑行，最高速度可達至每小時130公里以上。俯式冰橇由於滑行時頭部朝前方，故危險性比無舵雪橇（頭部朝後方）高。在冬季奧運中設立男子和女子的個人賽事。"
+      },
+      {
+         "title": "花樣滑冰",
+         "title2": "花樣滑冰Figure skating",
+         "artist": "8  players ",
+         "nation":"From Switzerland",
+         "horizontal":true,
+         "image2":"https://github.com/1pei0/pic/blob/main/image%206-8.png?raw=true",
+         "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
+         "image": "https://github.com/1pei0/pic/blob/main/Component%2021.png?raw=true",
+         "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+         "price": "花式滑冰是一項由單人、雙人或團體以冰刀在冰面上劃出圖形並表演技術動作的體育活動。這項運動在1908年成為奧林匹克運動會的項目 ，其四個現行奧運競賽項目包括男子單人滑、女子單人滑、雙人滑以及冰舞，非奧運競賽項目包括團體滑與四人滑。在成人組賽事中，選手表演短曲項目與長曲項目兩種內容，其中包含旋轉、跳躍、轉體、托舉、拋跳、螺旋線以及其他元素。",
+         "description": "Figure skating is a sport in which individuals, pairs, or groups perform on figure skates on ice. It was the first winter sport to be included in the Olympic Games, when contested at the 1908 Olympics in London.[1] The Olympic disciplines are men's singles, women's singles[note 1], pair skating, and ice dance; the four individual disciplines are also combined into a team event, first included in the Winter Olympics in 2014. The non-Olympic disciplines include synchronized skating, Theater on Ice, and four skating. From intermediate through senior-level competition, skaters generally perform two programs (the short program and the free skate), which, depending on the discipline, may include spins, jumps, moves in the field, lifts, throw jumps, death spirals, and other elements or moves."
+       },
+      {
+         "title": "速度滑冰",
+         "title2": "速度滑冰Speed skating",
+         "artist": "5 player",
+         "nation":"From Switzerland",
+         "horizontal":true,
+         "image2":"https://github.com/1pei0/pic/blob/main/image%206-9.png?raw=true",
+         "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
+         "image": "https://github.com/1pei0/pic/blob/main/Component%208-2.png?raw=true",
+         "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+         "price":"競速滑冰，俗稱「大道」，是冰雪運動中歷史最悠久，開展最廣泛的體育項目之一。男子速滑比賽在1924年就被列為冬季奧運會的比賽項目，女子比賽在1960年被列為冬季奧運會的比賽項目。比賽的賽道周長為400公尺，跑道內外兩道，道寬5公尺。比賽時兩人同時滑跑，每滑一圈交換一次內外道。",
+         "description": "Tchoukball /ˈtʃuːkbɔːl/ is an indoor team sport developed in the 1970s by Swiss biologist Hermann Brandt. Brandt was concerned about the number of injuries in sport at the time and as part of an educational study he wanted to create a sport that reduced injuries, was not aggressive between players and enabled people of all shapes, sizes, genders, cultures, and backgrounds to play together."
+        
+      } ,
+      {
+       "title": "冰球",
+       "title2": "冰球Ice hockey",
+       "artist": "Tansy E. Hoskins",
+       "nation":"From Switzerland",
+       "horizontal":true,
+       "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
+       "image": "https://github.com/1pei0/pic/blob/main/Component%2022.png?raw=true",
+       "image2":"https://github.com/1pei0/pic/blob/main/image%206-10.png?raw=true",
+       "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+       "price": "冰球（英語：ice hockey）又稱冰上曲棍球，在北美（加拿大和美國）和部分歐洲國家（如拉脫維亞和瑞典）則直接稱為「曲棍球」（hockey），是一項在滑冰場上進行的接觸性團隊運動，參賽選手穿著溜冰鞋在滑冰過程中用末端彎曲的球棍把一個硫化橡膠圓盤（冰球，英語：puck）打進對手球門作為得分方式。",
+       "description": "Ice hockey is a contact winter team sport played on ice skates, usually on an ice skating rink with lines and markings specific to the sport. In ice hockey, two opposing teams use ice hockey sticks to control, advance and shoot a closed, vulcanized, rubber disc called a 'puck' into the other team's goal. Each goal is worth one point. The team which scores the most goals is declared the winner. In a formal game, each team has six skaters on the ice at a time, barring any penalties, one of whom is the goaltender."
+    } ,
+    {
+       "title": "冰壺",
+       "title2": "冰壺Curling",
+       "artist": "Tansy E. Hoskins",
+       "nation":"From Switzerland",
+       "horizontal":true,
+       "image2":"https://github.com/1pei0/pic/blob/main/image%206-11.png?raw=true",
+       "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
+       "image": "https://github.com/1pei0/pic/blob/main/Component%2023.png?raw=true",
+       "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+       "price": "冰壺（英語：Curling）又稱為「冰上溜石」。冰壺是一項包含男、女子與混雙項目的隊制冬季奧林匹克運動會項目，冰壺所有的「壺」直接稱為冰壺亦可稱為「石壺」或「壺」，冰壺比賽的兩邊運動員分別把冰壺投出，將自己隊的冰壺盡量留在比賽場地的圓心中並且可將對方的冰壺撞走。",
+       "description": "Curling is a sport in which players slide stones on a sheet of ice toward a target area which is segmented into four concentric circles. It is related to bowls, boules, and shuffleboard. Two teams, each with four players, take turns sliding heavy, polished granite stones, also called rocks, across the ice curling sheet toward the house, a circular target marked on the ice.[2] Each team has eight stones, with each player throwing two. The purpose is to accumulate the highest score for a game; points are scored for the stones resting closest to the centre of the house at the conclusion of each end, which is completed when both teams have thrown all of their stones once. A game usually consists of eight or ten ends."
+    } 
+   ],
+   "albumList3":
+   [{
+    "title": "a"
+   }
+   ]
+ }
