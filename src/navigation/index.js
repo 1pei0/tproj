@@ -261,8 +261,8 @@ const HomeStack = ({navigation}) => {
           headerShadowVisible:false,
           headerRight:() => (
             <TouchableOpacity onPress={() => markFunction()}>
-            <Text>{mark ? <MaterialCommunityIcons name={'fy'} color={'black'} size={25} />:
-                            <MaterialCommunityIcons name={'magnify'} color={'#6200EE'} size={25} />}
+            <Text>{mark ? <MaterialCommunityIcons name={'bookmark-outline'} color={'black'} size={25} />:
+                            <MaterialCommunityIcons name={'bookmark'} color={'#6200EE'} size={25} />}
             </Text>
         </TouchableOpacity>
           ),

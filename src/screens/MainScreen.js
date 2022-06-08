@@ -47,6 +47,8 @@ const BallScreen = ({ navigation }) => {
         list={albumData.albumList1}  
         navigation={navigation}
       />
+       
+ 
       </Box>
       <Box bg="#E4F7FF" horizontal={true} h="280"_dark={{ bg: "#364A5C" }}
    _light={{ bg: "#E4F7FF" }} >

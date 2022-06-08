@@ -4,6 +4,10 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import thunk from "redux-thunk";
 
 import accountReducer from "./accountSlice";
+import {
+  colorModeReducer,
+  addFavReducer,
+} from './reducers';
 
 const persistConfig = {
   key: 'root',
@@ -13,6 +17,8 @@ const persistConfig = {
 export const store = configureStore({
   reducer: {
     account: persistReducer(persistConfig, accountReducer),
+    settings: colorModeReducer,
+    favBike: addFavReducer,
   },
   devTools: process.env.NODE_ENV !== 'production',
   middleware: [thunk]

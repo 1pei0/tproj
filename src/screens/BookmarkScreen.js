@@ -7,15 +7,6 @@ import { SafeAreaView, } from "react-native-safe-area-context";
 import { Dimensions, Platform } from "react-native";
 import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
 import BookmarkList from "../components/BookmarkList";
-import albumData from "../json/ex.json";
-import { NativeBaseProvider,  Button } from "native-base";
-//import { useDispatch, useSelector } from "react-redux";
-//import { selectSave, setSave } from "../redux/accountSlice";
-
-//import "./styles.css";
-
-//import AddBookmark from "../containers/AddBookmark ";
-//import BookmarkList0 from "../containers/BookmarkList0";
 
 
 const BookmarkScreen = ({route}) => {
@@ -75,4 +66,3 @@ const BookmarkScreen = ({route}) => {
 }
 
 export default BookmarkScreen;
-//, 'Ball games','Ice sport'
